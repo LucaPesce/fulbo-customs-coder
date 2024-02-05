@@ -1,0 +1,73 @@
+.section-equipo{
+    background: linear-gradient(166deg, rgb(0, 0, 0) 0%, rgb(26, 26, 26) 100%);;
+    padding: 1rem;
+    margin: 1rem 0;
+
+    
+    .container-texto-equipo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        flex-direction: column;
+
+        h2{
+            color: white;
+            font-family: montserrat;
+            font-weight: bold;
+        }
+
+        p{
+            color: white;
+            font-family: montserrat;
+            font-weight: 200;
+        }
+    }
+
+    .container-cards {
+        display: flex;
+        justify-content: center;
+        margin: 1rem, 0rem;
+
+        @include celular-2 {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card{
+            margin: 1rem;
+            background:linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); 
+            backdrop-filter: blur(10px);
+            border: .1rem solid rgba(255, 255, 255, 0.3);
+
+            .card-body{
+                
+                h5{
+                    font-family: montserrat;
+                    font-weight: 700;
+                    color: white;
+                }
+                p{
+                    font-family: montserrat;
+                    font-weight: 200;
+                    color: white;
+                }
+
+                .btn {
+                    display: flex;
+                    @extend %centrar;
+                    border: .1rem;
+                    border-color: solid rgb(255, 255, 255, 0.1);
+                    margin-bottom: 1rem;
+                    background: linear-gradient(45deg, rgba(249,206,52,1) 0%, rgba(238,42,123,1) 50%, rgba(102,34,215,1) 100%);
+                    img {
+                        height: 1rem;
+                    }
+                }
+                
+            }
+            
+
+        }
+    }
+}

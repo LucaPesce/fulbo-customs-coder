@@ -1,0 +1,41 @@
+footer {
+    background-color: black;
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+
+
+    .links-container {
+        display: flex;
+        flex-direction: column;
+
+            a{
+                
+                text-decoration: none;
+                color: rgb(140, 140, 140);
+                
+
+                &:hover {
+                    color: lighten($color: rgb(140, 140, 140), $amount: 10);
+                }
+                
+            }
+            
+            img {
+                height: 1rem;
+                margin-right: 0.2rem;
+            }
+    }
+
+    .copyright {
+        margin: 0;
+        display:flex;
+        color: white;
+    }
+
+    img {
+        height: 2rem;
+    }
+}

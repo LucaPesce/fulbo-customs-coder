@@ -1,0 +1,17 @@
+nav {
+
+    
+        background-color: black;
+
+        img {
+            margin: 1rem;
+        }
+
+        --bs-navbar-toggler-focus-width: 0rem !important;
+
+        .navbarNavAltMarkup {
+            transition: 1s;
+        }
+}
+
+

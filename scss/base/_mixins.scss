@@ -1,0 +1,11 @@
+@mixin celular {
+    @media (max-width: 875px) {
+      @content;
+    }
+  }
+
+@mixin celular-2 {
+    @media (max-width: 846px) {
+      @content;
+    }
+  }

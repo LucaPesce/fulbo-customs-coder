@@ -1,0 +1,69 @@
+.redirect-galeria {
+    display: flex;
+    background:linear-gradient(300deg, rgb(0, 0, 0) 0%, rgb(26, 26, 26) 100%);
+    margin-top: 1rem;
+
+    @include celular {
+        flex-direction: column;
+    }
+    
+
+    .img-section {
+        width: 50%;
+        overflow: hidden;
+
+        @include celular {
+            width: 100%;
+        }
+
+        img{
+            height: 32rem;
+            width: 100%;
+            object-fit: cover;
+            transition: .5s;
+
+            @include celular {
+                height: 25rem;
+            }
+            
+
+            &:hover{
+                scale: 1.1;
+            }
+        }
+    }
+
+    .container-texto-redirect{
+        display: flex;
+        padding: 2rem;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include celular {
+            width: 100%;
+        }
+
+        h1{
+            color: white;
+            font-family: montserrat;
+            font-weight: bold;
+        }
+
+        p{
+            color: white;
+            font-family: montserrat;
+            font-weight: 200;
+        }
+
+        button {
+            height: 2.5rem;
+            width: 5rem;
+            border-radius: 1.5rem;
+            background-color: rgb(255, 255, 255);
+            border: none;
+        }
+    }
+}
+
