@@ -1,0 +1,60 @@
+.container-cont{
+    background:linear-gradient(300deg, rgb(26, 26, 26) 0%,rgb(0, 0, 0)  100%);
+    display: flex;
+    margin: 1rem 0;
+    padding: 1rem;
+    flex-direction: column;
+    @extend %centrar;
+    h1{
+        font-size: 2rem;
+        font-family: montserrat;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        margin-top: 3rem;
+    }
+    p{
+        font-family: montserrat;
+        font-weight: 200;
+        color: rgb(255, 255, 255);
+    }
+    .form-contacto{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        background:linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); 
+        backdrop-filter: blur(10px);
+        border: .1rem solid rgba(255, 255, 255, 0.3);
+        padding: 1rem;
+        border-radius: 1rem;
+        margin-bottom: 3rem;
+        
+
+        .input-container{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+
+            label{
+                font-family: montserrat;
+                    font-weight: 200;
+                    color: rgb(255, 255, 255);
+            }
+
+            textarea{
+                height: 10rem;
+            }
+
+            .input-enviar{
+                font-family: montserrat;
+                    font-weight: 500;
+                    color: rgb(0, 0, 0);
+            }
+
+            input {
+                border-radius: 1rem;
+                border: solid .1rem rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+
+}
