@@ -5,6 +5,13 @@
     margin: 1rem 0rem;
     padding: 1rem;
 
+    .mb-3{
+        margin-bottom: 0 !important;
+    }
+
+    .card-sup{
+        margin-bottom: 1rem !important;
+    }
     @extend %centrar;
 
 
