@@ -45,7 +45,8 @@
             width: 100%;
         }
 
-        h1{
+        h2{
+            font-size: 2rem;
             color: white;
             font-family: montserrat;
             font-weight: bold;
@@ -59,14 +60,18 @@
 
         button {
             height: 2.5rem;
-            width: 5rem;
             border-radius: 1.5rem;
             background-color: rgb(255, 255, 255);
             border: none;
 
+            &:hover {
+                scale: 1.1;
+            }
+
             a {
                 text-decoration: none;
                 color: rgb(0, 0, 0);
+                margin: .5rem;
             }
         }
     }

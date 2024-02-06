@@ -34,7 +34,8 @@
         
         
         .card-body {
-            h5{
+            h1, h2{
+                font-size: 2rem;
                 font-family: montserrat;
                 font-weight: 700;
                 color: rgb(255, 255, 255);
@@ -47,7 +48,6 @@
 
             button {
                 height: 2.5rem;
-                width: 6rem;
                 border-radius: 1.5rem;
                 background-color: rgb(255, 255, 255);
                 border: none;

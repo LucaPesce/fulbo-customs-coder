@@ -26,7 +26,8 @@
                 justify-content: center;
                 align-items: start;
                 
-                h5{
+                h1{
+                    font-size: 2rem;
                     font-family: montserrat;
                     font-weight: 700;
                     color: rgb(255, 255, 255);
@@ -35,6 +36,21 @@
                     font-family: montserrat;
                     font-weight: 200;
                     color: rgb(255, 255, 255);
+                }
+                button {
+                    height: 2.5rem;
+                    border-radius: 1.5rem;
+                    background-color: rgb(255, 255, 255);
+                    border: none;
+                    
+                    a {
+                        text-decoration: none;
+                        color: rgb(0, 0, 0);
+                    }
+
+                    &:hover {
+                        scale: 1.1;
+                    }
                 }
             }
         }
