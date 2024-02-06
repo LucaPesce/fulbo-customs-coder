@@ -1,9 +1,10 @@
 @import "./base/_variables";
 @import "./base/_extends.scss";
 @import "./base/_mixins.scss";
-@import "./components/header.scss";
-@import "./components/footer.scss";
-@import "./components/section-disenios.scss";
-@import "./components/section-comprar.scss";
-@import "./components/section-equipo.scss";
+@import "./components/g-header.scss";
+@import "./components/g-footer.scss";
+@import "./components/i-section-disenios.scss";
+@import "./components/i-section-comprar.scss";
+@import "./components/i-section-equipo.scss";
+@import "./components/s-cards.scss";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;400;700&display=swap');

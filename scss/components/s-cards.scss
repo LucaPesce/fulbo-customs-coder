@@ -1,0 +1,58 @@
+.container-cards-servicios{
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(300deg, rgb(26, 26, 26) 0%,rgb(0, 0, 0)  100%);
+    margin: 1rem 0rem;
+    padding: 1rem;
+
+    @extend %centrar;
+
+
+
+
+
+.card{
+    background:linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); 
+            backdrop-filter: blur(10px);
+            border: .1rem solid rgba(255, 255, 255, 0.3);
+    .row {
+        @extend %centrar;
+
+            #img-s-d {
+                overflow: hidden;
+                img{
+                    scale: 1.5;
+                }
+            }
+        
+        
+        .card-body {
+            h5{
+                font-family: montserrat;
+                font-weight: 700;
+                color: rgb(255, 255, 255);
+            }
+            p{
+                font-family: montserrat;
+                font-weight: 200;
+                color: rgb(255, 255, 255);
+            }
+
+            button {
+                height: 2.5rem;
+                width: 6rem;
+                border-radius: 1.5rem;
+                background-color: rgb(255, 255, 255);
+                border: none;
+                
+                a {
+                    text-decoration: none;
+                    color: rgb(0, 0, 0);
+                }
+            }
+
+        }
+        }
+}
+    
+}

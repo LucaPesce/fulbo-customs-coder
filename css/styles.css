@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;400;700&display=swap");
-.section-equipo .container-cards .card .card-body .btn {
+.container-cards-servicios .card .row, .container-cards-servicios, .section-equipo .container-cards .card .card-body .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +87,7 @@ footer img {
   width: 50%;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 @media (max-width: 875px) {
   .redirect-galeria .container-texto-redirect {
@@ -110,6 +110,10 @@ footer img {
   border-radius: 1.5rem;
   background-color: rgb(255, 255, 255);
   border: none;
+}
+.redirect-galeria .container-texto-redirect button a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
 .redirect-comprar {
@@ -151,7 +155,7 @@ footer img {
   width: 50%;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 @media (max-width: 875px) {
   .redirect-comprar .container-texto-redirect {
@@ -181,19 +185,19 @@ footer img {
   padding: 1rem;
   margin: 1rem 0;
 }
-.section-equipo .container-texto-equipo {
+.section-equipo .container-texto {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
   flex-direction: column;
 }
-.section-equipo .container-texto-equipo h2 {
+.section-equipo .container-texto h2 {
   color: white;
   font-family: montserrat;
   font-weight: bold;
 }
-.section-equipo .container-texto-equipo p {
+.section-equipo .container-texto p {
   color: white;
   font-family: montserrat;
   font-weight: 200;
@@ -234,6 +238,46 @@ footer img {
 }
 .section-equipo .container-cards .card .card-body .btn img {
   height: 1rem;
+}
+
+.container-cards-servicios {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(300deg, rgb(26, 26, 26) 0%, rgb(0, 0, 0) 100%);
+  margin: 1rem 0rem;
+  padding: 1rem;
+}
+.container-cards-servicios .card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+.container-cards-servicios .card .row #img-s-d {
+  overflow: hidden;
+}
+.container-cards-servicios .card .row #img-s-d img {
+  scale: 1.5;
+}
+.container-cards-servicios .card .row .card-body h5 {
+  font-family: montserrat;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.container-cards-servicios .card .row .card-body p {
+  font-family: montserrat;
+  font-weight: 200;
+  color: rgb(255, 255, 255);
+}
+.container-cards-servicios .card .row .card-body button {
+  height: 2.5rem;
+  width: 6rem;
+  border-radius: 1.5rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+.container-cards-servicios .card .row .card-body button a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=styles.css.map */

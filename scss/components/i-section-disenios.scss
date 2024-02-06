@@ -1,10 +1,10 @@
-.redirect-comprar {
+.redirect-galeria {
     display: flex;
-    background:linear-gradient(300deg, rgb(26, 26, 26) 0%,rgb(0, 0, 0)  100%);
+    background:linear-gradient(300deg, rgb(0, 0, 0) 0%, rgb(26, 26, 26) 100%);
     margin-top: 1rem;
 
     @include celular {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     
 
@@ -39,13 +39,13 @@
         width: 50%;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: start;
 
         @include celular {
             width: 100%;
         }
 
-        h2{
+        h1{
             color: white;
             font-family: montserrat;
             font-weight: bold;
@@ -63,6 +63,12 @@
             border-radius: 1.5rem;
             background-color: rgb(255, 255, 255);
             border: none;
+
+            a {
+                text-decoration: none;
+                color: rgb(0, 0, 0);
+            }
         }
     }
 }
+
