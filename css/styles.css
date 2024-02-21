@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;400;700&display=swap");
-.container-cont, .container-gal .parent .grid-item, .container-gal .parent .back-img-grid, .container-gal .gal-tit, .container-gal, .container-cards-servicios .card .row, .container-cards-servicios, .section-equipo .container-cards .card .card-body .btn {
+.container-cont .cont-text-form, .container-cont, .container-gal .parent .grid-item, .container-gal .parent .back-img-grid, .container-gal .gal-tit, .container-gal, .nosotros-container .container-card-n, .container-cards-servicios .card .row, .container-cards-servicios, .section-equipo .container-cards .card .card-body .buttons-container-inicio .btn-behance, .section-equipo .container-cards .card .card-body .buttons-container-inicio .btn-instagram {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,7 +94,7 @@ footer img {
     width: 100%;
   }
 }
-.redirect-galeria .container-texto-redirect h2 {
+.redirect-galeria .container-texto-redirect h1 {
   font-size: 2rem;
   color: white;
   font-family: montserrat;
@@ -166,7 +166,7 @@ footer img {
     width: 100%;
   }
 }
-.redirect-comprar .container-texto-redirect h1 {
+.redirect-comprar .container-texto-redirect h2 {
   font-size: 2rem;
   color: white;
   font-family: montserrat;
@@ -231,7 +231,8 @@ footer img {
   backdrop-filter: blur(10px);
   border: 0.1rem solid rgba(255, 255, 255, 0.3);
 }
-.section-equipo .container-cards .card .card-body h5 {
+.section-equipo .container-cards .card .card-body h3 {
+  font-size: 1.5rem;
   font-family: montserrat;
   font-weight: 700;
   color: white;
@@ -241,15 +242,34 @@ footer img {
   font-weight: 200;
   color: white;
 }
-.section-equipo .container-cards .card .card-body .btn {
+.section-equipo .container-cards .card .card-body .buttons-container-inicio {
   display: flex;
+  flex-direction: row;
+}
+.section-equipo .container-cards .card .card-body .buttons-container-inicio .btn-instagram {
+  display: flex;
+  border-radius: 0.4rem;
+  height: 2rem;
+  width: 2rem;
   border: 0.1rem;
   border-color: solid rgba(255, 255, 255, 0.1);
-  margin-bottom: 1rem;
   background: linear-gradient(45deg, rgb(249, 206, 52) 0%, rgb(238, 42, 123) 50%, rgb(102, 34, 215) 100%);
 }
-.section-equipo .container-cards .card .card-body .btn img {
+.section-equipo .container-cards .card .card-body .buttons-container-inicio .btn-instagram img {
   height: 1rem;
+}
+.section-equipo .container-cards .card .card-body .buttons-container-inicio .btn-behance {
+  display: flex;
+  border-radius: 0.4rem;
+  height: 2rem;
+  width: 2rem;
+  border: 0.1rem;
+  border-color: solid rgba(255, 255, 255, 0.1);
+  background-color: #053fff;
+  margin-left: 0.5rem;
+}
+.section-equipo .container-cards .card .card-body .buttons-container-inicio .btn-behance img {
+  height: 0.8rem;
 }
 
 .container-cards-servicios {
@@ -260,7 +280,7 @@ footer img {
   padding: 1rem;
 }
 .container-cards-servicios .mb-3 {
-  margin-bottom: 0 !important;
+  margin-bottom: 1 !important;
 }
 .container-cards-servicios .card-sup {
   margin-bottom: 1rem !important;
@@ -269,11 +289,13 @@ footer img {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
   backdrop-filter: blur(10px);
   border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  margin: 1rem;
 }
-.container-cards-servicios .card .row #img-s-d {
+.container-cards-servicios .card .row .img-card-servicios {
   overflow: hidden;
+  object-fit: cover;
 }
-.container-cards-servicios .card .row #img-s-d img {
+.container-cards-servicios .card .row .img-card-servicios img {
   scale: 1.5;
 }
 .container-cards-servicios .card .row .card-body h1, .container-cards-servicios .card .row .card-body h2 {
@@ -287,15 +309,19 @@ footer img {
   font-weight: 200;
   color: rgb(255, 255, 255);
 }
-.container-cards-servicios .card .row .card-body button {
+.container-cards-servicios .card .row .card-body .btn {
   height: 2.5rem;
   border-radius: 1.5rem;
   background-color: rgb(255, 255, 255);
   border: none;
+  transition: 0.5s;
 }
-.container-cards-servicios .card .row .card-body button a {
+.container-cards-servicios .card .row .card-body .btn a {
   text-decoration: none;
   color: rgb(0, 0, 0);
+}
+.container-cards-servicios .card .row .card-body .btn:hover {
+  scale: 1.1;
 }
 
 .nosotros-container {
@@ -310,14 +336,13 @@ footer img {
   }
 }
 .nosotros-container .container-card-n {
-  width: 60%;
-  margin-right: 1rem;
+  margin: 7rem 1rem;
+  width: 50%;
 }
 @media (max-width: 875px) {
   .nosotros-container .container-card-n {
     width: 100%;
-    margin-right: 0;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
   }
 }
 .nosotros-container .container-card-n .card {
@@ -347,6 +372,7 @@ footer img {
   border-radius: 1.5rem;
   background-color: rgb(255, 255, 255);
   border: none;
+  transition: 0.5s;
 }
 .nosotros-container .container-card-n .card .card-body button a {
   text-decoration: none;
@@ -357,12 +383,14 @@ footer img {
 }
 .nosotros-container .container-iframe-n {
   display: flex;
-  width: 40%;
+  width: 50%;
+  margin: 1rem 1rem;
 }
 @media (max-width: 875px) {
   .nosotros-container .container-iframe-n {
     width: 100%;
     height: 20rem;
+    margin: 1rem 0;
   }
 }
 .nosotros-container .container-iframe-n iframe {
@@ -455,14 +483,19 @@ footer img {
   padding: 1rem;
   flex-direction: column;
 }
-.container-cont h1 {
+.container-cont .cont-text-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+.container-cont .cont-text-form h1 {
   font-size: 2rem;
   font-family: montserrat;
   font-weight: 700;
   color: rgb(255, 255, 255);
   margin-top: 3rem;
 }
-.container-cont p {
+.container-cont .cont-text-form p {
   font-family: montserrat;
   font-weight: 200;
   color: rgb(255, 255, 255);
@@ -476,7 +509,7 @@ footer img {
   border: 0.1rem solid rgba(255, 255, 255, 0.3);
   padding: 1rem;
   border-radius: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 .container-cont .form-contacto .input-container {
   display: flex;
@@ -495,6 +528,10 @@ footer img {
   font-family: montserrat;
   font-weight: 500;
   color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+.container-cont .form-contacto .input-container .input-enviar:hover {
+  background-color: rgb(139, 255, 139);
 }
 .container-cont .form-contacto .input-container input {
   border-radius: 1rem;

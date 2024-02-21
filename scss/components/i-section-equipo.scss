@@ -43,6 +43,7 @@
             .card-body{
                 
                 h3{
+                    font-size: 1.5rem;
                     font-family: montserrat;
                     font-weight: 700;
                     color: white;
@@ -53,16 +54,38 @@
                     color: white;
                 }
 
-                .btn {
+                .buttons-container-inicio{
                     display: flex;
-                    @extend %centrar;
-                    border: .1rem;
-                    border-color: solid rgb(255, 255, 255, 0.1);
-                    margin-bottom: 1rem;
-                    background: linear-gradient(45deg, rgba(249,206,52,1) 0%, rgba(238,42,123,1) 50%, rgba(102,34,215,1) 100%);
-                    img {
-                        height: 1rem;
+                    flex-direction: row;
+                    .btn-instagram {
+                        display: flex;
+                        border-radius: 0.4rem;
+                        height: 2rem;
+                        width: 2rem;
+                        @extend %centrar;
+                        border: .1rem;
+                        border-color: solid rgb(255, 255, 255, 0.1);
+                        background: linear-gradient(45deg, rgba(249,206,52,1) 0%, rgba(238,42,123,1) 50%, rgba(102,34,215,1) 100%);
+                        img {
+                            height: 1rem;
+                        }
                     }
+                    
+                    .btn-behance{
+                        display: flex;
+                        border-radius: 0.4rem;
+                        height: 2rem;
+                        width: 2rem;
+                        @extend %centrar;
+                        border: .1rem;
+                        border-color: solid rgb(255, 255, 255, 0.1);
+                        background-color: #053fff;
+                        margin-left: .5rem;
+                        img {
+                            height: 0.8rem;
+                        }
+                    }
+
                 }
                 
             }
